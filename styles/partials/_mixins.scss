@@ -1,0 +1,6 @@
+@mixin underline-button($radius, $color) {
+  background-color: $color;
+  color: $font-color;
+  text-decoration: none;  
+  border-radius: $radius;
+}

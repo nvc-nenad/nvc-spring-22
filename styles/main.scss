@@ -1,0 +1,27 @@
+// our css code will go here
+
+@import './vendor/normalize';
+@import './partials/colors';
+@import './partials/mixins';
+
+nav {
+  background-color: $header-color;
+  ul {
+    margin-bottom: 50px;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: $font-color;
+      }
+    }
+  }
+}
+
+.buy-cta {
+  @include underline-button(5px, $primary-color);
+}
+
+.contact-us-cta {
+  @include underline-button(25px, $secondary-color);
+}
